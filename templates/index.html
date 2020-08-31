@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MGA Licensees</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Company Name</th>
+                <th>License Class</th>
+                <th>License Number</th>
+                <th>Status</th>
+                <th>Registration Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for c in companies %}
+                <tr>
+                    <td>{{ c.0 }}</td>
+                    <td>{{ c.1 }}</td>
+                    <td>{{ c.2 }}</td>
+                    <td>{{ c.3 }}</td>
+                    <td>{{ c.4 }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+</body>
+</html>
